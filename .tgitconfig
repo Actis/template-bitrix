@@ -1,0 +1,10 @@
+[tgit]
+	projectlanguage = 1033
+[bugtraq]
+	url = http://jira.actis.ru/browse/%BUGID%
+	warnifnoissue = false
+	message = %BUGID%
+	label = Jira Issue
+	append = true
+	number = false
+	logregex = ([A-Z]{2,}-\\d+)

@@ -1,0 +1,60 @@
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files we want to always be normalized and converted 
+# to native line endings on checkout.
+*.config text diff=html
+*.css    text
+*.htm    text diff=html
+*.html   text diff=html
+*.js     text
+*.json   text
+*.md     text
+*.php    text diff=php
+# SQL scripts produced by SSMS might be saved in UTF-16 encoding
+# which are not text files from Git point of view.
+*.sql    text=auto
+*.svg    text diff=html
+*.txt    text
+*.xml    text diff=html
+*.xsl    text diff=html
+*.xslt   text diff=html
+
+# Declare files that will always have CRLF line endings on checkout.
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+
+# For the following file types, normalize line endings to LF on
+# checkin and prevent conversion to CRLF when they are checked out
+# (this is required in order to prevent newline related issues like,
+# for example, after the build script is run)
+#.*      text eol=lf
+*.sh    text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.7z   binary filter=lfs diff=lfs merge=lfs
+*.avi  binary filter=lfs diff=lfs merge=lfs
+*.bz   binary filter=lfs diff=lfs merge=lfs
+*.eot  binary
+*.flv  binary filter=lfs diff=lfs merge=lfs
+*.gif  binary
+*.gz   binary filter=lfs diff=lfs merge=lfs
+*.jpg  binary
+*.m4v  binary filter=lfs diff=lfs merge=lfs
+*.mov  binary filter=lfs diff=lfs merge=lfs
+*.mp3  binary filter=lfs diff=lfs merge=lfs
+*.mp4  binary filter=lfs diff=lfs merge=lfs
+*.ogg  binary filter=lfs diff=lfs merge=lfs
+*.ogv  binary filter=lfs diff=lfs merge=lfs
+*.pdf  binary filter=lfs diff=lfs merge=lfs
+*.png  binary
+*.rar  binary filter=lfs diff=lfs merge=lfs
+*.swf  binary
+*.tar  binary filter=lfs diff=lfs merge=lfs
+*.tgz  binary filter=lfs diff=lfs merge=lfs
+*.ttf  binary
+*.webm binary filter=lfs diff=lfs merge=lfs
+*.wmv  binary filter=lfs diff=lfs merge=lfs
+*.woff binary
+*.xz   binary filter=lfs diff=lfs merge=lfs
+*.zip  binary filter=lfs diff=lfs merge=lfs

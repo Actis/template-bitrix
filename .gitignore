@@ -1,0 +1,46 @@
+# files
+*~
+*.[7bgx]z
+*.bak
+*.cab
+*.csv
+*.[jrt]ar
+*.log
+*.mp4
+*.old
+*.orig
+*.pdf
+*.sav
+*.sql
+*.sqlite
+*.swf
+*.tgz
+*.tmp
+*.xml
+*.zip
+.buildpath
+.htaccess
+robots.txt
+web.config
+
+# folders
+/src/site/_dumps/
+/src/site/_log/
+/src/site/_tmp/
+/src/site/flash/
+/src/site/upload/
+/src/site/video/
+ 
+# bitrix kernel files
+/src/site/bitrix/
+
+# IDEs
+.idea/
+.metadata/
+.settings/
+
+# Operating systems generated
+__MACOSX/
+*.DS_Store
+[Dd]esktop.ini
+[Tt]humbs.db
